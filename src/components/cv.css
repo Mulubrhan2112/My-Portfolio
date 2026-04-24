@@ -1,0 +1,42 @@
+.cv-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+    justify-content: center;
+ 
+}
+
+/* Base button style */
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Primary button (View CV) */
+.btn-primary {
+  background-color: #111;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+}
+
+/* Outline button (Download CV) */
+.btn-outline {
+  border: 2px solid #111;
+  color: #111;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #111;
+  color: white;
+}
