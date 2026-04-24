@@ -12,7 +12,7 @@ function Navbar() {
       <nav className="navbar">
         <h2 className="logo">MyPortfolio</h2>
         <ul className="nav-links">
-         // <Link to="/">Home</Link>
+         
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
