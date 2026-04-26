@@ -5,21 +5,64 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 .navbar {
   display: flex;
-  justify-content: space-around;
-  padding: 15px 30px;
-  background: #222;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #111;
   color: white;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: space-around space-between;
-  gap: 20px;
+.logo {
+  font-size: 24px;
 }
 
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav-links :hover{
+  color: #487080;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    background-color: #111;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
 .hero {
   text-align: center;
   padding: 80px 20px;

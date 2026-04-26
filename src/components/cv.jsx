@@ -6,7 +6,7 @@ export default function CVButtons() {
     <div className="cv-buttons">
       {/* View CV */}
       <a
-        href="../../public/cv.pdf"
+        href="/cv.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="btn btn-primary"
@@ -15,7 +15,7 @@ export default function CVButtons() {
       </a>
 
       {/* Download CV */}
-      <a href="../../public/cv.pdf" download className="btn btn-outline">
+      <a href="/cv.pdf" download className="btn btn-outline">
         Download CV
       </a>
     </div>
